@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+
+    <!--google font-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+    <!--preload-->
+    <link rel="preload" as="image" href="img/hero-slider-1.jpg">
+    <link rel="preload" as="image" href="img/hero-slider-2.jpg">
+    <link rel="preload" as="image" href="img/hero-slider-3.jpg">
+
+</head>
+
+<body>
+
+    <!-- preloader inicio -->
+
+    <div class="preload" data-preaload>
+        <div class="circulo"></div>
+        <p class="texto">Daat</p>
+    </div>
+    <!-- preloader final -->
+
+    <!--Barra superior inicio-->
+
+    <div class="topbar">
+        <div class="container">
+
+            <address class="topbar-item">
+            <div class="icono">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+            </div>
+    
+            <span class="span">
+                Restaurante St, Ciudad Deliciosa, Caracas 1010, VEN
+            </span>
+          </address>
+
+            <div class="separador"></div>
+
+            <div class="topbar-item item-2">
+                <div class="iconO">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">Abrimos : 8.00 am to 10.00 pm</span>
+            </div>
+
+            <a href="tel:+584163250137" class="topbar-item link">
+                <div class="icono">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">+58-416-325-01-37</span>
+            </a>
+
+            <div class="separador"></div>
+
+            <a href="example@restaurant.com" class="topbar-item link">
+                <div class="icono">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">example@restaurant.com</span>
+            </a>
+
+        </div>
+    </div>
+
+    <!--Barra superior final-->
+
+    <!--Header inicio-->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="img/logo.png" width="160" height="50" alt="Daat - Home">
+            </a>
+
+            <nav class="navbar " data-navbar>
+
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+                <a href="#" class="logo">
+                    <img src="img/logo.png" width="160" height="50" alt="Daat - Home">
+                </a>
+
+                <ul class="navbar-lista">
+
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link hover-underline">
+                            <div class="separador"></div>
+
+                            <span class="span">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#menu" class="navbar-link hover-underline">
+                            <div class="separador"></div>
+
+                            <span class="span">Menus</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#acerca" class="navbar-link hover-underline">
+                            <div class="separador"></div>
+
+                            <span class="span">Acerca de</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link hover-underline">
+                            <div class="separador"></div>
+
+                            <span class="span">Nuestros Chefs</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#reserva" class="navbar-link hover-underline">
+                            <div class="separador"></div>
+
+                            <span class="span">Contacto</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="texto-center">
+                    <p class="headline-1 navbar-titulo">Visítanos</p>
+
+                    <address class="body-4">
+                        Restaurante St, Ciudad Deliciosa, <br> Caracas 1010, VEN
+              </address>
+
+                    <p class="body-4 navbar-texto">Abrimos: 9.30 am - 2.30pm</p>
+
+                    <a href="example@gmail.com" class="body-4 sidebar-link">exmaple@gmail.com</a>
+
+                    <div class="separador"></div>
+
+                    <p class="contacto-label">Solicitud de reserva</p>
+
+                    <a href="tel:+54163250137" class="body-1 contacto-number hover-underline">
+                +58-416-325-01-37
+              </a>
+                </div>
+
+            </nav>
+
+            <a href="#" class="btn btn-secondary">
+                <span class="text text-1">Encontrar una mesa</span>
+
+                <span class="text text-2" aria-hidden="true">Encontrar una mesa</span>
+            </a>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <span class="linea linea-1"></span>
+            <span class="linea linea-2"></span>
+            <span class="linea linea-3"></span>
+          </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+    <!--Header final-->
+
+    <main>
+        <article>
+
+            <!-- home inicio -->
+
+            <section class="home texto-center" aria-label="home" id="home">
+
+                <ul class="home-slider" data-home-slider>
+
+                    <li class="slider-item active" data-home-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="img/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal">Tradicional e Higiene</p>
+
+                        <h1 class="display-1 home-titulo slider-reveal">
+                            Por el amor de <br> comida deliciosa
+                        </h1>
+
+                        <p class="body-2 home-texto slider-reveal">
+                            Ven con tu familia y siente la alegría de una comida deliciosa.
+                        </p>
+
+                        <a href="#" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">Ver Nuestro Menú</span>
+
+                            <span class="text text-2" aria-hidden="true">Ver Nuestro Menú</span>
+                        </a>
+
+                    </li>
+
+                    <li class="slider-item" data-home-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="img/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal">experiencia encantadora</p>
+
+                        <h1 class="display-1 home-titulo slider-reveal">
+                            Sabores inspirados en <br> las estaciones
+                        </h1>
+
+                        <p class="body-2 home-texto slider-reveal">
+                            Ven con tu familia y siente la alegría de una comida deliciosa.
+                        </p>
+
+                        <a href="#" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">Ver Nuestro Menú</span>
+
+                            <span class="text text-2" aria-hidden="true">Ver Nuestro Menú</span>
+                        </a>
+
+                    </li>
+
+                    <li class="slider-item" data-home-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="img/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal">Asombroso y delicioso</p>
+
+                        <h1 class="display-1 home-titulo slider-reveal">
+                            Donde cada sabor <br> cuenta una historia
+                        </h1>
+
+                        <p class="body-2 home-texto slider-reveal">
+                            Ven con tu familia y siente la alegría de una comida deliciosa.
+                        </p>
+
+                        <a href="#" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">Ver Nuestro Menú</span>
+
+                            <span class="text text-2" aria-hidden="true">Ver Nuestro Menú</span>
+                        </a>
+
+                    </li>
+
+                </ul>
+
+                <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+                <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+                <a href="#" class="home-btn has-after">
+                    <img src="img/hero-icon.png" width="48" height="48" alt="booking icon">
+
+                    <span class="label-2 texto-center span">Reservar una mesa</span>
+                </a>
+
+            </section>
+
+            <!--home final-->
+
+            <!-- Servicio inicio -->
+
+            <section class="section servicio bg-black-10 texto-center" aria-label="service">
+                <div class="container">
+
+                    <p class="section-subtitle label-2">Sabores para la realeza</p>
+
+                    <h2 class="headline-1 section-titulo">Ofrecemos lo mejor</h2>
+
+                    <p class="section-texto">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys standard dummy text ever.
+                    </p>
+
+                    <ul class="grid-lista">
+
+                        <li>
+                            <div class="servicio-tarjeta">
+
+                                <a href="#" class="has-before hover:shine">
+                                    <figure class="tarjeta-banner img-holder" style="--width: 285; --height: 336;">
+                                        <img src="./img/service-1.jpg" width="285" height="336" loading="lazy" alt="Breakfast" class="img-cover">
+                                    </figure>
+                                </a>
+
+                                <div class="tarjeta-contenido">
+
+                                    <h3 class="title-4 tarjeta-titulo">
+                                        <a href="#">Desayuno</a>
+                                    </h3>
+
+                                    <a href="#" class="btn-texto hover-underline label-2">Ver menú</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="servicio-tarjeta">
+
+                                <a href="#" class="has-before hover:shine">
+                                    <figure class="tarjeta-banner img-holder" style="--width: 285; --height: 336;">
+                                        <img src="./img/service-2.jpg" width="285" height="336" loading="lazy" alt="Appetizers" class="img-cover">
+                                    </figure>
+                                </a>
+
+                                <div class="tarjeta-contenido">
+
+                                    <h3 class="title-4 tarjeta-titulo">
+                                        <a href="#">Aperitivos</a>
+                                    </h3>
+
+                                    <a href="#" class="btn-texto hover-underline label-2">Ver menú</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="servicio-tarjeta">
+
+                                <a href="#" class="has-before hover:shine">
+                                    <figure class="tarjeta-banner img-holder" style="--width: 285; --height: 336;">
+                                        <img src="./img/service-3.jpg" width="285" height="336" loading="lazy" alt="Drinks" class="img-cover">
+                                    </figure>
+                                </a>
+
+                                <div class="tarjeta-contenido">
+
+                                    <h3 class="title-4 tarjeta-titulo">
+                                        <a href="#">Bebidas</a>
+                                    </h3>
+
+                                    <a href="#" class="btn-texto hover-underline label-2">Ver menú</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <img src="./img/shape-1.png" width="246" height="412" loading="lazy" alt="shape" class="shape shape-1 move-anim">
+                    <img src="./img/shape-2.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-2 move-anim">
+
+                </div>
+            </section>
+
+            <!-- Servicio final -->
+
+            <!-- Acerca de inicio -->
+
+            <section class="section acerca texto-center" aria-labelledby="about-label" id="acerca">
+                <div class="container">
+
+                    <div class="acerca-contenido">
+
+                        <p class="label-2 section-subtitle" id="about-label">Nuestra historia</p>
+
+                        <h2 class="headline-1 section-titulo">Cada sabor cuenta una historia</h2>
+
+                        <p class="section-texto">
+                            Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived
+                            not only five centuries, but also the leap into.
+                        </p>
+
+                        <div class="contacto-label">Reservar a través de llamada</div>
+
+                        <a href="tel:+584163250137" class="body-1 contacto-number hover-underline">+58 (416) 325 0137</a>
+
+                        <a href="#" class="btn btn-primary">
+                            <span class="text text-1">Leer más</span>
+
+                            <span class="text text-2" aria-hidden="true">Leer más</span>
+                        </a>
+
+                    </div>
+
+                    <figure class="acerca-banner">
+
+                        <img src="./img/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner" class="w-100" data-parallax-item data-parallax-speed="1">
+
+                        <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+                            <img src="./img/about-abs-image.jpg" width="285" height="285" loading="lazy" alt="" class="w-100">
+                        </div>
+
+                        <div class="abs-img abs-img-2 has-before">
+                            <img src="./img/badge-2.png" width="133" height="134" loading="lazy" alt="">
+                        </div>
+
+                    </figure>
+
+                    <img src="./img/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+                </div>
+            </section>
+
+            <!-- Acerca de final -->
+
+            <!-- Plato especial inicio -->
+
+            <section class="especial texto-center" aria-labelledby="dish-label">
+
+                <div class="especial-banner">
+                    <img src="./img/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish" class="img-cover">
+                </div>
+
+                <div class="especial-contenido bg-black-10">
+                    <div class="container">
+
+                        <img src="./img/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+                        <p class="section-subtitle label-2">Plato Especial</p>
+
+                        <h2 class="headline-1 section-titulo">Pollo al Horno</h2>
+
+                        <p class="section-texto">
+                            Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the industrys standard dummy text ever since the when an unknown printer took a galley of type.
+                        </p>
+
+                        <div class="wrapper">
+                            <del class="del body-3">$40.00</del>
+
+                            <span class="span body-1">$20.00</span>
+                        </div>
+
+                        <a href="#" class="btn btn-primary">
+                            <span class="text text-1">Ver todo el menú</span>
+
+                            <span class="text text-2" aria-hidden="true">Ver todo el menú</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <img src="./img/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+                <img src="./img/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+            </section>
+
+            <!-- Plato especial final -->
+
+            <!-- Menu inicio -->
+
+            <section class="section menu" aria-label="menu-label" id="menu">
+                <div class="container">
+
+                    <p class="section-subtitle texto-center label-2">Selección especial</p>
+
+                    <h2 class="headline-1 section-titulo texto-center">Menú Delicioso</h2>
+
+                    <ul class="grid-lista">
+
+                        <li>
+                            <div class="menu-tarjeta hover:tarjeta">
+
+                                <figure class="tarjeta-banner img-holder" style="--width: 100; --height: 100;">
+                                    <img src="./img/menu-1.jpg" width="100" height="100" loading="lazy" alt="Greek Salad" class="img-cover">
+                                </figure>
+
+                                <div>
+
+                                    <div class="titulo-wrapper">
+                                        <h3 class="title-3">
+                                            <a href="#" class="tarjeta-titulo">Ensalada griega</a>
+                                        </h3>
+
+                                        <span class="badge label-1">Estacional</span>
+
+                                        <span class="span title-2">$25.50</span>
+                                    </div>
+
+                                    <p class="tarjeta-texto label-1">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, facere.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="menu-tarjeta hover:tarjeta">
+
+                                <figure class="tarjeta-banner img-holder" style="--width: 100; --height: 100;">
+                                    <img src="./img/menu-2.jpg" width="100" height="100" loading="lazy" alt="Lasagne" class="img-cover">
+                                </figure>
+
+                                <div>
+
+                                    <div class="titulo-wrapper">
+                                        <h3 class="title-3">
+                                            <a href="#" class="tarjeta-titulo">Lasaña</a>
+                                        </h3>
+
+                                        <span class="span title-2">$40.00</span>
+                                    </div>
+
+                                    <p class="tarjeta-texto label-1">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, facere.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="menu-tarjeta hover:tarjeta">
+
+                                <figure class="tarjeta-banner img-holder" style="--width: 100; --height: 100;">
+                                    <img src="./img/menu-3.jpg" width="100" height="100" loading="lazy" alt="Butternut Pumpkin" class="img-cover">
+                                </figure>
+
+                                <div>
+
+                                    <div class="titulo-wrapper">
+                                        <h3 class="title-3">
+                                            <a href="#" class="tarjeta-titulo">Sopa de Calabaza</a>
+                                        </h3>
+
+                                        <span class="span title-2">$10.00</span>
+                                    </div>
+
+                                    <p class="tarjeta-texto label-1">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, facere.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="menu-tarjeta hover:tarjeta">
+
+                                <figure class="tarjeta-banner img-holder" style="--width: 100; --height: 100;">
+                                    <img src="./img/menu-4.jpg" width="100" height="100" loading="lazy" alt="Tokusen Wagyu" class="img-cover">
+                                </figure>
+
+                                <div>
+
+                                    <div class="titulo-wrapper">
+                                        <h3 class="title-3">
+                                            <a href="#" class="tarjeta-titulo">Arroz con Pollo</a>
+                                        </h3>
+
+                                        <span class="badge label-1">Nuevo</span>
+
+                                        <span class="span title-2">$39.00</span>
+                                    </div>
+
+                                    <p class="tarjeta-texto label-1">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, facere.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="menu-tarjeta hover:tarjeta">
+
+                                <figure class="tarjeta-banner img-holder" style="--width: 100; --height: 100;">
+                                    <img src="./img/menu-5.jpg" width="100" height="100" loading="lazy" alt="Olivas Rellenas" class="img-cover">
+                                </figure>
+
+                                <div>
+
+                                    <div class="titulo-wrapper">
+                                        <h3 class="title-3">
+                                            <a href="#" class="tarjeta-titulo">Pasta con Salsa</a>
+                                        </h3>
+
+                                        <span class="span title-2">$25.00</span>
+                                    </div>
+
+                                    <p class="tarjeta-texto label-1">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, facere.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="menu-tarjeta hover:tarjeta">
+
+                                <figure class="tarjeta-banner img-holder" style="--width: 100; --height: 100;">
+                                    <img src="./img/menu-6.jpg" width="100" height="100" loading="lazy" alt="Opu Fish" class="img-cover">
+                                </figure>
+
+                                <div>
+
+                                    <div class="titulo-wrapper">
+                                        <h3 class="title-3">
+                                            <a href="#" class="tarjeta-titulo">Pescado Frito</a>
+                                        </h3>
+
+                                        <span class="span title-2">$49.00</span>
+                                    </div>
+
+                                    <p class="tarjeta-texto label-1">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, facere.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <p class="menu-texto texto-center">
+                        Durante el invierno todos los días desde <span class="span">7:00 pm</span> to <span class="span">9:00 pm</span>
+                    </p>
+
+                    <a href="#" class="btn btn-primary">
+                        <span class="text text-1">Ver todo el menú</span>
+
+                        <span class="text text-2" aria-hidden="true">Ver todo el menú</span>
+                    </a>
+
+                    <img src="./img/shape-5.png" width="921" height="1036" loading="lazy" alt="shape" class="shape shape-2 move-anim">
+                    <img src="./img/shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim">
+
+                </div>
+            </section>
+
+            <!-- Menu final -->
+
+            <!-- Testimonio inicio -->
+
+            <section class="section testi texto-center has-bg-image" style="background-image: url('./img/testimonial-bg.jpg')" aria-label="testimonials">
+                <div class="container">
+
+                    <div class="cita">”</div>
+
+                    <p class="headline-2 testi-texto">
+                        Quería agradecerte por invitarme a esa increíble cena de la otra noche. La comida fue extraordinaria.
+                    </p>
+
+                    <div class="wrapper">
+                        <div class="separador"></div>
+                        <div class="separador"></div>
+                        <div class="separador"></div>
+                    </div>
+
+                    <div class="perfil">
+                        <img src="./img/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="" class="img">
+
+                        <p class="label-2 perfil-name">Yonathan Sanchez</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Testimonio final -->
+
+            <!-- Reserva inicio -->
+
+            <section class="reserva" id="reserva">
+                <div class="container">
+
+                    <div class="form reserva-form bg-black-10">
+
+                        <form action="" class="form-left">
+
+                            <h2 class="headline-1 texto-center">Reservacion en linea</h2>
+
+                            <p class="form-text texto-center">
+                                Solicitud de reserva <a href="tel:+584163250137" class="link">+58-416-325-01-37</a> o rellene el formulario de pedido
+                            </p>
+
+                            <div class="input-wrapper">
+                                <input type="text" name="name" placeholder="Tu Nombre" autocomplete="off" class="input-field">
+
+                                <input type="number" name="phone" placeholder="Numero Telefono" autocomplete="off" class="input-field">
+                            </div>
+
+                            <div class="input-wrapper">
+
+                                <div class="icono-wrapper">
+                                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                                    <select name="persona" class="input-field">
+                            <option value="1-persona">1 Persona</option>
+                            <option value="2-persona">2 Persona</option>
+                            <option value="3-persona">3 Persona</option>
+                            <option value="4-persona">4 Persona</option>
+                            <option value="5-persona">5 Persona</option>
+                            <option value="6-persona">6 Persona</option>
+                            <option value="7-persona">7 Persona</option>
+                          </select>
+
+                                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <div class="icono-wrapper">
+                                    <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                                    <input type="date" name="reservation-date" class="input-field">
+
+                                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <div class="icono-wrapper">
+                                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                                    <select name="person" class="input-field">
+                            <option value="08:00am">08 : 00 am</option>
+                            <option value="09:00am">09 : 00 am</option>
+                            <option value="010:00am">10 : 00 am</option>
+                            <option value="011:00am">11 : 00 am</option>
+                            <option value="012:00am">12 : 00 am</option>
+                            <option value="01:00pm">01 : 00 pm</option>
+                            <option value="02:00pm">02 : 00 pm</option>
+                            <option value="03:00pm">03 : 00 pm</option>
+                            <option value="04:00pm">04 : 00 pm</option>
+                            <option value="05:00pm">05 : 00 pm</option>
+                            <option value="06:00pm">06 : 00 pm</option>
+                            <option value="07:00pm">07 : 00 pm</option>
+                            <option value="08:00pm">08 : 00 pm</option>
+                            <option value="09:00pm">09 : 00 pm</option>
+                            <option value="10:00pm">10 : 00 pm</option>
+                          </select>
+
+                                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                                </div>
+
+                            </div>
+
+                            <textarea name="message" placeholder="Mensaje" autocomplete="off" class="input-field"></textarea>
+
+                            <button type="submit" class="btn btn-secondary">
+                        <span class="text text-1">Reservar una mesa</span>
+        
+                        <span class="text text-2" aria-hidden="true">Reservar una mesa</span>
+                      </button>
+
+                        </form>
+
+                        <div class="form-right texto-center" style="background-image: url('./img/form-pattern.png')">
+
+                            <h2 class="headline-1 texto-center">Contacta con nosotros</h2>
+
+                            <p class="contacto-label">Solicitud de reserva</p>
+
+                            <a href="tel:+584163250137" class="body-1 contacto-number hover-underline">+58-325-0137</a>
+
+                            <div class="separador"></div>
+
+                            <p class="contacto-label">Ubicación</p>
+
+                            <address class="body-4">
+                                Restaurante St, Ciudad Deliciosa, <br> Caracas 1010, VEN
+                      </address>
+
+                            <p class="contacto-label">Hora de comer</p>
+
+                            <p class="body-4">
+                                De lunes a domingo <br> 11.00 am - 2.30pm
+                            </p>
+
+                            <p class="contacto-label">Hora de la cena</p>
+
+                            <p class="body-4">
+                                De lunes a domingo <br> 05.00 pm - 10.00pm
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Reserva final -->
+
+            <!-- Caracteristica inicio -->
+
+            <section class="section features texto-center" aria-label="features">
+                <div class="container">
+
+                    <p class="section-subtitle label-2">Por qué elegirnos</p>
+
+                    <h2 class="headline-1 section-titulo">Nuestra fuerza</h2>
+
+                    <ul class="grid-lista">
+
+                        <li class="feature-item">
+                            <div class="feature-tarjeta">
+
+                                <div class="tarjeta-icono">
+                                    <img src="./img/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                                </div>
+
+                                <h3 class="title-2 tarjeta-titulo">Alimentos higiénicos</h3>
+
+                                <p class="label-1 tarjeta-texto">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+                            </div>
+                        </li>
+
+                        <li class="feature-item">
+                            <div class="feature-tarjeta">
+
+                                <div class="tarjeta-icono">
+                                    <img src="./img/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                                </div>
+
+                                <h3 class="title-2 tarjeta-titulo">Ambiente fresco</h3>
+
+                                <p class="label-1 tarjeta-texto">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+                            </div>
+                        </li>
+
+                        <li class="feature-item">
+                            <div class="feature-tarjeta">
+
+                                <div class="tarjeta-icono">
+                                    <img src="./img/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                                </div>
+
+                                <h3 class="title-2 tarjeta-titulo">Chefs expertos</h3>
+
+                                <p class="label-1 tarjeta-texto">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+                            </div>
+                        </li>
+
+                        <li class="feature-item">
+                            <div class="feature-tarjeta">
+
+                                <div class="tarjeta-icono">
+                                    <img src="./img/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                                </div>
+
+                                <h3 class="title-2 tarjeta-titulo">Evento y fiesta</h3>
+
+                                <p class="label-1 tarjeta-texto">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <img src="./img/shape-7.png" width="208" height="178" loading="lazy" alt="shape" class="shape shape-1">
+
+                    <img src="./img/shape-8.png" width="120" height="115" loading="lazy" alt="shape" class="shape shape-2">
+
+                </div>
+            </section>
+
+            <!-- Caracteristica final -->
+
+            <!-- Evento inicio -->
+
+            <section class="section evento bg-black-10" aria-label="event">
+                <div class="container">
+
+                    <p class="section-subtitle label-2 texto-center">Actualizaciones recientes</p>
+
+                    <h2 class="section-titulo headline-1 texto-center">Evento proximo</h2>
+
+                    <ul class="grid-lista">
+
+                        <li>
+                            <div class="evento-tarjeta has-before hover:shine">
+
+                                <div class="tarjeta-banner img-holder" style="--width: 350; --height: 450;">
+                                    <img src="./img/event-1.jpg" width="350" height="450" loading="lazy" alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                                    <time class="publish-date label-2" datetime="2022-09-15">15/09/2023</time>
+                                </div>
+
+                                <div class="tarjeta-contenido">
+                                    <p class="tarjeta-subtitle label-2 texto-center">comida, sabor</p>
+
+                                    <h3 class="tarjeta-titulo title-2 texto-center">
+                                        Sabor tan bueno que intentarás comerlo con los ojos.
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="evento-tarjeta has-before hover:shine">
+
+                                <div class="tarjeta-banner img-holder" style="--width: 350; --height: 450;">
+                                    <img src="./img/event-2.jpg" width="350" height="450" loading="lazy" alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                                    <time class="publish-date label-2" datetime="2022-09-08">08/09/2023</time>
+                                </div>
+
+                                <div class="tarjeta-contenido">
+                                    <p class="tarjeta-subtitle label-2 texto-center">Comida sana</p>
+
+                                    <h3 class="tarjeta-titulo title-2 texto-center">
+                                        Sabor tan bueno que intentarás comerlo con los ojos.
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="evento-tarjeta has-before hover:shine">
+
+                                <div class="tarjeta-banner img-holder" style="--width: 350; --height: 450;">
+                                    <img src="./img/event-3.jpg" width="350" height="450" loading="lazy" alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                                    <time class="publish-date label-2" datetime="2022-09-03">03/09/2022</time>
+                                </div>
+
+                                <div class="tarjeta-contenido">
+                                    <p class="tarjeta-subtitle label-2 texto-center">Receta</p>
+
+                                    <h3 class="tarjeta-titulo title-2 texto-center">
+                                        Sabor tan bueno que intentarás comerlo con los ojos.
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <a href="#" class="btn btn-primary">
+                        <span class="text text-1">Ver nuestro blog</span>
+
+                        <span class="text text-2" aria-hidden="true">Ver nuestro blog</span>
+                    </a>
+
+                </div>
+            </section>
+
+            <!-- Evento final -->
+
+        </article>
+    </main>
+
+    <!-- Footer inicio -->
+
+    <footer class="footer section has-bg-image texto-center" style="background-image: url('./img/footer-bg.jpg')">
+        <div class="container">
+
+            <div class="footer-top grid-lista">
+
+                <div class="footer-brand has-before has-after">
+
+                    <a href="#" class="logo">
+                        <img src="./img/logo.png" width="160" height="50" loading="lazy" alt="grilli home">
+                    </a>
+
+                    <address class="body-4">
+            Restaurante St, Ciudad Deliciosa, Caracas 1010, VEN
+          </address>
+
+                    <a href="example@gmail.com" class="body-4 contacto-link">example@gmail.com</a>
+
+                    <a href="tel:+584163250137" class="body-4 contacto-link">Booking Request : +58-416-3250137</a>
+
+                    <p class="body-4">
+                        Abierto : 09:00 am - 01:00 pm
+                    </p>
+
+                    <div class="wrapper">
+                        <div class="separador"></div>
+                        <div class="separador"></div>
+                        <div class="separador"></div>
+                    </div>
+
+                    <p class="title-1">Recibe noticias y ofertas</p>
+
+                    <p class="label-1">
+                        Suscríbete y obtén <span class="span">25% oferta.</span>
+                    </p>
+
+                    <form action="" class="input-wrapper">
+                        <div class="icono-wrapper">
+                            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                            <input type="email" name="email_address" placeholder="Tu Correo" autocomplete="off" class="input-field">
+                        </div>
+
+                        <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Suscribir</span>
+
+              <span class="text text-2" aria-hidden="true">Suscribir</span>
+            </button>
+                    </form>
+
+                </div>
+
+                <ul class="footer-lista">
+
+                    <li>
+                        <a href="#home" class="label-2 footer-link hover-underline">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#menu" class="label-2 footer-link hover-underline">Menus</a>
+                    </li>
+
+                    <li>
+                        <a href="#acerca" class="label-2 footer-link hover-underline">Acerca De</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="label-2 footer-link hover-underline">Nuestros Chefs</a>
+                    </li>
+
+                    <li>
+                        <a href="#contacto" class="label-2 footer-link hover-underline">Contacto</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-lista">
+
+                    <li>
+                        <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="label-2 footer-link hover-underline">Whatsapp</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="label-2 footer-link hover-underline">Telegram</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p class="copyright">
+                    &copy; 2023 Daat. Todos los derechos reservados | Elaborado por <a href="" target="_blank" class="link">Yonathan Sanchez</a>
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Footer final -->
+
+    <!--Volver Arriba -->
+
+    <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+
+    <script src="js/restaurante.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
